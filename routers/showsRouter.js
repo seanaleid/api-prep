@@ -24,16 +24,29 @@ router.get('/', (req,res)=> {
 router.get('/:id', (req,res) =>{
     const { id } = req.params
     showsDB
-    .get(show => {
-        res.status(200).json(show);
+    .get(id) 
+    .then(show => {
+        res.status(200).json(show)
     })
-    .then()
     .catch(err => {
         message:`Error: ${err}`;
     })
 })
 
 //GET shows characters  ?/:id?
+router.get('/:id/characters', (req,res)=> {
+    const { id } =req.params
+    showsDB
+    .getShowsCharacters(id)
+    .then(characters => {
+        res.status(200).json(characters);
+    })
+    .catch(err => {
+        res.status(500).json({
+            errorMessage: `error ${err}`
+        })
+    })
+})
 
 //POST
 router.post('/', (req,res)=>{
