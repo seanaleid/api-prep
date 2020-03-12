@@ -1,0 +1,29 @@
+{
+  "name": "api-prep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanaleid/api-prep.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seanaleid/api-prep/issues"
+  },
+  "homepage": "https://github.com/seanaleid/api-prep#readme",
+  "devDependencies": {
+    "knex-cleaner": "^1.3.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "helmet": "^3.21.3",
+    "knex": "^0.20.11",
+    "sqlite3": "^4.1.1"
+  }
+}
