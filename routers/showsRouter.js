@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
 
-const cors =require('cors')
+
 const showsDB = require('../data/helpers/showsModel');
 
-router.use(cors()) //allows you to connect to react app on diff. server
+ //allows you to connect to react app on diff. server
 //routes
 
 //GET shows
