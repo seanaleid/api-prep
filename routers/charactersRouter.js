@@ -49,7 +49,7 @@ router.delete('/:id', (req,res)=> {
     .remove(id)
     .then(deleteCharacter => {
         res.status(201).json(deleteCharacter);
-    })
+    } )
     .catch(err => {
         res.status(500).json({
             errorMessage: `Error ${err}`
